@@ -1,0 +1,13 @@
+.expandable-content {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #f9f9f9;
+  }
+  
+  .expandable-content.expanded {
+    /* Changed from fixed height to auto-scaling */
+    max-height: 100vh; /* Or use content.scrollHeight in JS */
+    padding: 15px;
+  }
